@@ -1,40 +1,13 @@
 # Sharukshan Niranjan Portfolio
 
-This is a framework-free static portfolio built with HTML, CSS, and vanilla JavaScript.
+A static, one-page portfolio built with HTML, CSS, and vanilla JavaScript. It can be hosted directly with GitHub Pages.
 
-## Files
+## Publish with GitHub Pages
 
-- `index.html` - page content and metadata
-- `styles.css` - visual design and responsive layouts
-- `script.js` - navigation, scroll animations, and active-section behavior
-- `assets/profile.jpg` - profile photograph
-- `assets/Sharukshan_Niranjan_CV.pdf` - downloadable CV
+1. Upload everything in this folder to the root of your `My-Portfolio` repository.
+2. In the repository, open **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select the `main` branch and the `/ (root)` folder, then click **Save**.
+5. After GitHub finishes deploying, open `https://sharuk-64.github.io/My-Portfolio/`.
 
-## Preview locally
-
-You can double-click `index.html`, or start a small local web server from this folder:
-
-```bash
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
-
-## Host it yourself
-
-Upload the entire folder without changing its structure. Set `index.html` as the default page.
-
-### GitHub Pages
-
-1. Create a public GitHub repository.
-2. Upload all files and the `assets` folder to the repository root.
-3. Open **Settings > Pages**.
-4. Select **Deploy from a branch**, then choose the main branch and root folder.
-
-### Netlify, Cloudflare Pages, or Vercel
-
-Import the repository or drag this folder into the provider's deployment interface. No build command is required. Use the project root as the output/publish directory.
-
-## Customize
-
-Edit text and links in `index.html`, colours and spacing in `styles.css`, and interaction behavior in `script.js`. Keep the filenames and folder structure unchanged unless you also update their references in `index.html`.
+Keep the file and folder names unchanged so the stylesheet, script, profile photo, and CV links continue to work.

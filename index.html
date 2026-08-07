@@ -40,7 +40,6 @@
     <main id="main-content">
       <section class="hero section-shell" id="home">
         <div class="portrait-wrap reveal">
-          <div class="portrait-halo" aria-hidden="true"></div>
           <img
             class="portrait"
             src="assets/profile.jpg"
@@ -48,7 +47,6 @@
             width="900"
             height="1069"
           />
-          <span class="portrait-note">Peradeniya, Sri Lanka</span>
         </div>
 
         <div class="hero-copy reveal">
@@ -64,26 +62,8 @@
             <a class="round-action action-primary" href="#projects">View projects</a>
             <a class="round-action" href="https://github.com/sharuk-64" target="_blank" rel="noreferrer">GitHub</a>
             <a class="round-action" href="https://www.linkedin.com/in/sharuk-niran4a6b20" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="round-action" href="mailto:n.sharukshan@gmail.com">Email me</a>
           </div>
-        </div>
-      </section>
-
-      <section class="facts-band" aria-label="Profile highlights">
-        <div class="fact">
-          <strong>3.812</strong>
-          <span>GPA / 4.00</span>
-        </div>
-        <div class="fact">
-          <strong>01</strong>
-          <span>Peer-reviewed paper</span>
-        </div>
-        <div class="fact">
-          <strong>03</strong>
-          <span>Research projects</span>
-        </div>
-        <div class="fact">
-          <strong>365–940</strong>
-          <span>nm imaging range</span>
         </div>
       </section>
 
@@ -156,38 +136,37 @@
           <article class="project-card reveal">
             <div class="project-topline"><span>Earth Observation</span><span>2026–Present</span></div>
             <h3>Remote-Sensing Change Detection</h3>
-            <p>
-              Binary and semantic change detection for bi-temporal satellite imagery, with emphasis on
-              flood-related changes and Mamba-based visual architectures.
-            </p>
+            <p>Exploring binary and semantic change detection for bi-temporal satellite imagery, with an emphasis on flood-related change and modern visual architectures.</p>
             <ul>
-              <li>Reproducible training and evaluation workflows</li>
-              <li>Pixel-level change-mask annotation application</li>
-              <li>F1, IoU, specificity, boundary, and threshold analysis</li>
+              <li>Satellite-image dataset preparation and annotation</li>
+              <li>Learning-based change-detection model development</li>
+              <li>Reproducible experimentation and technical documentation</li>
             </ul>
-            <div class="tag-row"><span>PyTorch</span><span>Transformers</span><span>Mamba</span></div>
+            <div class="tag-row"><span>PyTorch</span><span>Transformers</span><span>Mamba</span><span>Earth Observation</span></div>
           </article>
 
           <article class="project-card reveal">
             <div class="project-topline"><span>Plant Sensing</span><span>2025–Present</span></div>
             <h3>Non-Destructive Chlorophyll Estimation</h3>
-            <p>
-              A transmittance multispectral imaging pipeline using 13 discrete bands and laboratory
-              spectrophotometric measurements as ground truth.
-            </p>
-            <div class="metric"><strong>0.9805</strong><span>test R² · polynomial ridge</span></div>
-            <div class="tag-row"><span>MSI</span><span>PCA / LDA</span><span>Uncertainty</span></div>
+            <p>Developing a transmittance multispectral imaging workflow for non-destructive estimation of chlorophyll in plant leaves.</p>
+            <ul>
+              <li>Multispectral data acquisition and image correction</li>
+              <li>Region-of-interest extraction and spectral feature engineering</li>
+              <li>Regression modelling, validation, and uncertainty-aware analysis</li>
+            </ul>
+            <div class="tag-row"><span>Multispectral Imaging</span><span>Feature Engineering</span><span>Regression</span><span>Plant Sensing</span></div>
           </article>
 
           <article class="project-card reveal">
             <div class="project-topline"><span>Food Quality</span><span>2025–Present</span></div>
             <h3>Urea Adulteration Quantification</h3>
-            <p>
-              A non-destructive method for estimating urea concentration in bovine milk using 12 spectral
-              bands, regression, and a feed-forward neural network.
-            </p>
-            <div class="metric"><strong>0.9773</strong><span>validation R² · neural network</span></div>
-            <div class="tag-row"><span>OpenCV</span><span>Regression</span><span>Neural Networks</span></div>
+            <p>Investigating a non-destructive imaging approach for identifying urea adulteration in bovine milk using multispectral data and learning-based models.</p>
+            <ul>
+              <li>Controlled sample preparation and image acquisition</li>
+              <li>Image preprocessing and spectral feature extraction</li>
+              <li>Regression-based modelling for food-quality sensing</li>
+            </ul>
+            <div class="tag-row"><span>OpenCV</span><span>Regression</span><span>Neural Networks</span><span>Food Sensing</span></div>
           </article>
         </div>
       </section>
@@ -207,11 +186,8 @@
             <div class="timeline-copy">
               <p class="eyebrow">Farbe Technologies (Pvt) Ltd · Sri Lanka</p>
               <h3>Research and Development Intern</h3>
-              <p>
-                Developing remote-sensing change-detection systems for flood and land-cover analysis,
-                curating multi-temporal imagery and ground-truth masks, and translating operational needs
-                into reproducible experiments and technical workflows.
-              </p>
+              <p>Working on remote-sensing change detection using bi-temporal satellite imagery for flood and land-cover analysis. The role includes dataset preparation, annotation, model development, reproducible experimentation, and technical documentation.</p>
+              <div class="experience-tags"><span>Remote Sensing</span><span>Computer Vision</span><span>Dataset Curation</span><span>Model Development</span></div>
             </div>
           </article>
 
@@ -220,10 +196,8 @@
             <div class="timeline-copy">
               <p class="eyebrow">University of Peradeniya · Sri Lanka</p>
               <h3>Undergraduate Researcher — Multispectral Imaging</h3>
-              <p>
-                Designing acquisition protocols and end-to-end imaging pipelines for chlorophyll estimation
-                and quantitative detection of urea adulteration, including validation and uncertainty analysis.
-              </p>
+              <p>Designing experimental protocols and imaging workflows for chlorophyll estimation and the study of urea adulteration. The work covers image acquisition, preprocessing, feature engineering, statistical learning, validation, uncertainty analysis, and scientific writing.</p>
+              <div class="experience-tags"><span>Experimental Design</span><span>Multispectral Imaging</span><span>Statistical Learning</span><span>Scientific Writing</span></div>
             </div>
           </article>
         </div>
@@ -242,7 +216,8 @@
           <div>
             <p class="eyebrow">Feb. 2022 – Oct. 2026 · Expected</p>
             <h3>University of Peradeniya</h3>
-            <p>B.Sc. Engineering (Hons.) in Electrical and Electronic Engineering</p>
+            <p>Department of Electrical and Electronic Engineering</p>
+            <p class="education-detail">B.Sc. Engineering (Hons.) in Electrical and Electronic Engineering</p>
           </div>
           <div class="education-score">
             <strong>3.812</strong>
@@ -254,13 +229,26 @@
           <span>Machine Intelligence</span><span>Signal Processing</span><span>Nonlinear Systems</span>
           <span>Industrial Statistics</span><span>Embedded Systems</span><span>Digital System Design</span>
         </div>
+
+        <article class="education-card school-card reveal">
+          <div>
+            <p class="eyebrow">May 2006 – Oct. 2020</p>
+            <h3>Trinity College Kandy</h3>
+            <p>G.C.E. Advanced Level — Physical Science Stream, English Medium</p>
+            <p class="education-detail">Three A grades in Combined Mathematics, Physics, and Chemistry</p>
+          </div>
+          <div class="education-score">
+            <strong>2.0868</strong>
+            <span>A/L Z-score</span>
+          </div>
+        </article>
       </section>
 
       <section class="contact-section" id="contact">
         <div class="section-shell contact-inner reveal">
-          <p class="eyebrow">Let’s connect</p>
-          <h2>Interested in computer vision<br />for real-world sensing?</h2>
-          <p>I’m currently open to PhD opportunities in computer vision, machine learning, Earth observation, and intelligent sensing.</p>
+          <p class="eyebrow">PhD opportunities</p>
+          <h2>Open to PhD<br />opportunities.</h2>
+          <p>I’m seeking PhD opportunities in computer vision and machine learning, particularly in Earth observation, remote sensing, and intelligent sensing.</p>
           <a class="email-link" href="mailto:n.sharukshan@gmail.com">n.sharukshan@gmail.com <span aria-hidden="true">↗</span></a>
         </div>
       </section>
@@ -269,6 +257,7 @@
     <footer class="site-footer">
       <p>© <span id="current-year">2026</span> Sharukshan Niranjan</p>
       <div>
+        <a href="mailto:n.sharukshan@gmail.com">n.sharukshan@gmail.com</a>
         <a href="https://github.com/sharuk-64" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/sharuk-niran4a6b20" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="#top">Back to top ↑</a>

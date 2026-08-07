@@ -1,6 +1,10 @@
 const menuButton = document.querySelector('.menu-button');
 const navigation = document.querySelector('.primary-nav');
-const navigationLinks = [...document.querySelectorAll('.primary-nav a[href^="#"]')];
+const navigationLinks = [...document.querySelectorAll('.primary-nav a')];
+const sectionNavigationLinks = navigationLinks.filter((link) => {
+  const target = new URL(link.href);
+  return target.pathname === window.location.pathname && Boolean(target.hash);
+});
 const revealItems = document.querySelectorAll('.reveal');
 
 function closeMenu() {
@@ -37,8 +41,9 @@ const sectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
-      navigationLinks.forEach((link) => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+      sectionNavigationLinks.forEach((link) => {
+        const target = new URL(link.href);
+        link.classList.toggle('active', target.hash === `#${entry.target.id}`);
       });
     });
   },
