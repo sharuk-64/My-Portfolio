@@ -254,6 +254,58 @@ a {
   line-height: 1.72;
 }
 
+.connect-block {
+  margin-top: 28px;
+}
+
+.connect-label {
+  margin: 0 0 13px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.connect-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.connect-icons a {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  transition: border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.connect-icons svg {
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.connect-icons a:hover,
+.connect-icons a:focus-visible {
+  border-color: var(--accent-deep);
+  color: var(--accent-deep);
+  transform: translateY(-3px);
+}
+
+.connect-block + .hero-actions {
+  margin-top: 28px;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
